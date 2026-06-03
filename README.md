@@ -113,7 +113,7 @@ potwierdziło uruchomienie wszystkich wymaganych usług:
 
 Screenshot:
 
-![docker compose ps](screenshots/docker-compose-ps.png)
+![docker compose ps](screenshots/compose-ps.png)
 
 ---
 
