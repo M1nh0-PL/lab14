@@ -1,17 +1,14 @@
 services:
-
-  nginx:
-    image: nginx:1.27-alpine
-    container_name: nginx
-    ports:
-      - "4001:80"
+  mysql:
+    image: mysql:8.4
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: testdb
     volumes:
-      - ./index.php:/var/www/html/index.php
-      - ./default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - php
+      - mysql_data:/var/lib/mysql
     networks:
-      - frontend
       - backend
 
   php:
@@ -23,37 +20,37 @@ services:
     networks:
       - backend
 
-  mysql:
-    image: mysql:8.4
-    container_name: mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: testdb
-      MYSQL_USER: student
-      MYSQL_PASSWORD: student123
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: nginx
+    depends_on:
+      - php
+    ports:
+      - "4001:80"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - ./index.php:/var/www/html/index.php
+      - ./default.conf:/etc/nginx/conf.d/default.conf
     networks:
+      - frontend
       - backend
 
   phpmyadmin:
     image: phpmyadmin:5.2
     container_name: phpmyadmin
     restart: always
+    depends_on:
+      - mysql
     ports:
       - "6001:80"
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
-    depends_on:
-      - mysql
     networks:
       - backend
-
-volumes:
-  mysql_data:
 
 networks:
   frontend:
   backend:
+
+volumes:
+  mysql_data:
