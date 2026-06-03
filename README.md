@@ -120,8 +120,6 @@ Hasło: student123
 
 Po zalogowaniu możliwe jest zarządzanie bazą danych MySQL.
 
-Screenshot:
-
 ![phpMyAdmin](screenshots/phpmyadmin2.png)
 
 ---
@@ -140,8 +138,6 @@ Operacja zakończyła się powodzeniem, co potwierdza poprawną współpracę:
 - MySQL,
 - sieci backend.
 
-Screenshot:
-
 ![Test database](screenshots/phpmyadmin.png)
 
 ---
@@ -149,17 +145,3 @@ Screenshot:
 # Wnioski
 
 Przygotowany stos LEMP działa poprawnie.
-
-Zrealizowano wszystkie wymagania zadania:
-
-- utworzono cztery wymagane kontenery,
-- skonfigurowano Docker Compose,
-- uruchomiono Nginx,
-- uruchomiono PHP-FPM,
-- uruchomiono MySQL,
-- uruchomiono phpMyAdmin,
-- skonfigurowano sieci frontend i backend,
-- udostępniono Nginx na porcie 4001,
-- udostępniono phpMyAdmin na porcie 6001,
-- potwierdzono działanie stosu LEMP,
-- potwierdzono możliwość utworzenia testowej bazy danych.
