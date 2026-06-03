@@ -122,7 +122,7 @@ Po zalogowaniu możliwe jest zarządzanie bazą danych MySQL.
 
 Screenshot:
 
-![phpMyAdmin](screenshots/phpmyadmin.png)
+![phpMyAdmin](screenshots/phpmyadmin2.png)
 
 ---
 
