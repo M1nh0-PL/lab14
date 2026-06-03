@@ -126,7 +126,7 @@ Po zalogowaniu możliwe jest zarządzanie bazą danych MySQL.
 
 # Inicjalizacja testowej bazy danych
 
-Po zalogowaniu do phpMyAdmin utworzono bazę danych: `testdb`
+Po zalogowaniu do phpMyAdmin utworzono bazę danych: `lab14_test`
 
 Operacja zakończyła się powodzeniem, co potwierdza poprawną współpracę:
 
