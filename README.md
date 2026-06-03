@@ -62,6 +62,7 @@ Budowa i uruchomienie wszystkich usług:
 ```bash
 docker compose up -d --build
 ```
+
 ![docker compose up](screenshots/compose-up.png)
 
 
@@ -70,25 +71,6 @@ Sprawdzenie stanu kontenerów:
 ```bash
 docker compose ps
 ```
-
----
-
-# Wynik działania docker compose
-
-Polecenie:
-
-```bash
-docker compose ps
-```
-
-potwierdziło uruchomienie wszystkich wymaganych usług:
-
-- mysql
-- php
-- nginx
-- phpmyadmin
-
-Screenshot:
 
 ![docker compose ps](screenshots/compose-ps.png)
 
