@@ -50,7 +50,7 @@ Podłączone kontenery:
 
 W treści zadania wymagano, aby phpMyAdmin był dostępny na porcie 6001 oraz umożliwiał logowanie do serwera MySQL i tworzenie testowej bazy danych. Aby phpMyAdmin mógł komunikować się z serwerem MySQL, oba kontenery muszą znajdować się w tej samej sieci Docker. 
 Z tego powodu phpMyAdmin został podłączony do sieci backend, w której znajduje się również kontener MySQL. 
-Dzięki temu phpMyAdmin może korzystać z nazwy hosta: !mysql i nawiązywać połączenie z bazą danych bez konieczności publikowania portu MySQL na zewnątrz. 
+Dzięki temu phpMyAdmin może korzystać z nazwy hosta: `mysql` i nawiązywać połączenie z bazą danych bez konieczności publikowania portu MySQL na zewnątrz. 
 Takie rozwiązanie zwiększa bezpieczeństwo środowiska, ponieważ serwer bazy danych nie jest bezpośrednio dostępny z sieci hosta.
 
 ---
@@ -126,11 +126,7 @@ Po zalogowaniu możliwe jest zarządzanie bazą danych MySQL.
 
 # Inicjalizacja testowej bazy danych
 
-Po zalogowaniu do phpMyAdmin utworzono bazę danych:
-
-```text
-testdb
-```
+Po zalogowaniu do phpMyAdmin utworzono bazę danych: `testdb`
 
 Operacja zakończyła się powodzeniem, co potwierdza poprawną współpracę:
 
