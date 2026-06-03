@@ -114,13 +114,13 @@ Dane logowania:
 
 ```text
 Host: mysql
-Użytkownik: student
-Hasło: student123
+Użytkownik: root
+Hasło: root123
 ```
 
 Po zalogowaniu możliwe jest zarządzanie bazą danych MySQL.
 
-![phpMyAdmin](screenshots/phpmyadmin2.png)
+![phpMyAdmin](screenshots/phpmyadmin1.png)
 
 ---
 
@@ -134,7 +134,7 @@ Operacja zakończyła się powodzeniem, co potwierdza poprawną współpracę:
 - MySQL,
 - sieci backend.
 
-![Test database](screenshots/phpmyadmin.png)
+![Test database](screenshots/phpmyadmin2.png)
 
 ---
 
