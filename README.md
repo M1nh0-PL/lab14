@@ -96,8 +96,6 @@ Potwierdza to poprawne działanie:
 - PHP-FPM,
 - komunikacji pomiędzy kontenerami.
 
-Screenshot:
-
 ![LEMP](screenshots/phpinfo.png)
 
 ---
