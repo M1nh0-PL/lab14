@@ -134,7 +134,7 @@ Operacja zakończyła się powodzeniem, co potwierdza poprawną współpracę:
 - MySQL,
 - sieci backend.
 
-![Test database](screenshots/phpmyadmin2.png)
+![Test database](screenshots/phpmyadmin-2.png)
 
 ---
 
